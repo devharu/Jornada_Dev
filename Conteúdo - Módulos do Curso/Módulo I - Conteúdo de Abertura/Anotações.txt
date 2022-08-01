@@ -1,0 +1,14 @@
+Comandos Importantes para a utilização do GIT utilizando o Git Bash (Terminal extendido para otimizar o uso do Git):
+
+
+* GIT CLONE (sintaxe: git clone https://link): Utilizado para criar um clone do nosso repositório dentro da nossa máquina.
+
+* GIT STATUS: Verifica se houve alguma alteração nos arquivos e exibe as informações de pendentes/enviados.
+
+* CLEAR OU Ctrl+L: Comandos utilizados para limpar o console afim de limpar o console.
+
+* GIT ADD . ou GIT ADD -A: Adicionar todos os arquivos para envio para o repositório web com controle de versão.
+
+* GIT COMMIT -m "mensagem": Comando utilizado para commitar as alterações e preparar o mesmo para o repositório web. O -m é utilizado para inserir um comentário no commit.
+
+* GIT PUSH ORIGIN MAIN: Envia o as alterações para o repositório web.
