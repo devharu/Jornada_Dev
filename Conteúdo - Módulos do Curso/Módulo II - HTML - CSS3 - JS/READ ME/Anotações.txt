@@ -1,0 +1,181 @@
+ID x CLASSE
+
+HTML (sintaxe)
+<header id="header" class="header"></header>
+<header class="header"></header>
+
+CSS (sintaxe)
+Classe
+.header {
+	padding: 10px;
+}
+ID (só pode ser usada uma vez na página)
+#header {
+	padding: 10px;
+}
+
+--------------------------------------------------
+BOX MODEL
+
+Margem
+	Border
+		Padding
+			Content
+
+--------------------------------------------------
+EXEMPLOS P/ UTILIZAÇÃO DE PADDING E MARGIN
+
+Ex. Altura e Largura
+.post {
+  padding: 15px 10px;
+}
+
+Ex. Topo, Direita, Inferior e Esquerda
+.post {
+  padding: 15px 10px 5px 0;
+}
+
+Usando propriedades específicas
+.post {
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 0;
+}
+
+EXEMPLOS P/ UTILIZAÇÃO DE BACKGROUD
+
+.post {
+  background-color: green;
+  background-image: url("bg.png");
+  background-position: top;
+}
+
+Formas diferentes de alterar a cor
+.post {
+  background-color: green;
+  background-color: #008800;
+  background: #008800;
+}
+
+EXEMPLOS P/ UTILIZAÇÃO DO BORDER
+.post {
+  border: 3px solid blue;
+  border-top: 2px dotted green;
+  border-right: 4px dashed pink;
+}
+
+Ex. Largura, Estilo e Cor
+.post {
+  border-top: 2px dotted green;
+  border-right: 4px dashed pink;
+  border-bottom: 1px solid purple;
+  border-left: 4px dotted cyan;
+}
+
+Podem ser usadas separadamente
+.post {
+  border-width: 3px;
+  border-color: #505050;
+  border-style: solid;
+}
+
+E mais específica ainda
+.post {
+  border-top-width: 3px;
+  border-top-color: #505050;
+  border-top-style: solid;
+}
+
+Border radius para arredondar
+.post {
+  border-radius: 10px;
+  border-radius: 50%;
+}
+
+Ex. Altura e Largura
+.post {
+  border-radius: 10% 20%;
+}
+
+Ex. Topo, Direita, Inferior e Esquerda
+.post {
+  border-radius: 10% 20% 15% 22%;
+}
+
+--------------------------------------------------
+ESTILIZANDO TEXTOS
+
+Font-Family (Font)
+#title {
+  font-family: Verdana;
+}
+
+.post_title {
+  font-family: Verdana, Arial;
+}
+
+Size (Tamanho)
+#title {
+  font-size: 30px;
+}
+
+Style (Estlilo)
+#title {
+  font-style: italic;
+}
+
+Wedth (Peso)
+#title {
+  font-whedth: bold;
+}
+
+Text-Transform (aA)
+#title {
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: capitalize;
+}
+
+Text-Decoration (Linha)
+#title {
+  text-decoration: underline;
+  text-decoration: overline;
+  text-decoration: line-through;
+}
+
+--------------------------------------------------
+EDITANDO LISTAS
+
+Ícone quadrado
+ul {
+  list-style-type: square;
+}
+
+Ícone algarismo romano
+ul {
+  list-style-type: upper-roman;
+}
+
+Ícone joínha
+ul {
+  list-style-type: "\1F44D";
+}
+
+Ícone imagem
+ul {
+  list-style-image: url("rocket.png");
+}
+
+--------------------------------------------------
+DIMENSÕES E ALINHAMENTO
+
+Width (Altura)
+Height (Largura)
+
+Max-Width (Altura máxima)
+Max-Height (Largura máxima)
+
+Margin (Margem)
+
+Text Align (Alinhar textos)
