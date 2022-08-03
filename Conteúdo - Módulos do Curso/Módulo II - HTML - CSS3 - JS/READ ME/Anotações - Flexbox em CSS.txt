@@ -1,0 +1,97 @@
+POSICIONANDO ELEMENTOS COM FLEXBOX EM CSS
+
+Flex Item
+
+Container
+	Flex-item1	Flex-item3 FLex-item3
+	
+Propriedades relacionadas:
+flex-grow (crescimento)
+flex-basis (tamanho inicial)
+flex-shrink (capacidade de redução)
+flex (agrupador das três propriedades acima)
+order (ordem)
+align-self (alinhamento de item específico)
+
+=====================================================
+DISPLAY: FLEX;
+
+flex-direction (horizontal x vertical)
+É a propriedade que estabelece o eixo principal do container, definindo assim a direção que os flex items são colocados no flex container.
+
+row (esquerda para direita)
+Ex: 1 2 3 4
+
+row-reverse (direita para esquerda)
+Ex: 4 3 2 1
+
+column (cima para baixo)
+Ex: 1
+	2
+	3
+	4
+
+column-reverse (baixo para cima)
+Ex: 4
+	3
+	2
+	1
+	
+=====================================================
+flex-wrap
+É a propriedade que define se os itens devem ou não quebrar a linha. Por padrão eles não quebram linhas, isso faz com que os itens tentem se compactar ao máximo.
+
+Ex: 
+Flex nowrap (padrão)
+	[ 1 2 3 4 ] 5
+
+Com wrap	
+	[ 1 2 3 4 ]
+	[ 5       ]
+	
+Com wrap reverse
+	[ 5       ]
+	[ 1 2 3 4 ]
+	
+=====================================================
+flex-flow
+É um atalho para as propriedades flex-direction e flex-wrap. Porém o seu uso não é tão comum, visto que, quando mudamos o flex-direction para column, mantemos o padrão do flex-wrap que é nowrap.
+
+Ex: flex-flow: row wrap;
+
+=====================================================
+justify content
+Essa propriedade vai se encarregar de alinhar os itens dentro do container de acordo com a direção pretendida e tratar da distribuição de espaçamento entre eles.
+OBS: Caso seus itens estejam ocupando 100% de todo o container, ele não se aplica.
+
+flex-start (inicio do container)
+flex-end (final do container)
+center (ao centro)
+space-between (cria um espaçamento igual entre os elementos)
+space-around (os espaçamentos do meio são duas vezes maiores que o inicial e final)
+
+=====================================================
+align items
+Trata do alinhamento dos flex itens de acordo com o eixo do container.
+O alinhamento é diferente para quando os itens estão em colunas ou linhas, além de permitir o alinhamento central no eixo vertical.
+
+center (centraliza o texto)
+stretch (crescimento referente ao maior item)
+flex-start (alinha acima)
+flex-end (alinha abaixo)
+baseline (alinha com o final do texto)
+ 
+ =====================================================
+ align content
+ É a propriedade responsável por tratar o alinhamento das linhas do container em relação ao eixo vertical do container.
+ 
+ Precisamos que:
+ * O container utilize quebra de linhas;
+ * A altura do container seja maior que a soma das linhas dos itens.
+ 
+ center (ao centro)
+ stretch (crescimento referente ao maior item)
+ flex-start (alinha acima)
+ flex-end (alinha abaixo)
+ space-between (cria um espaçamento igual entre os items)
+ space-around (espaçamento do meio duas vezes maiores)
